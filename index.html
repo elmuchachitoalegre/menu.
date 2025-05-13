@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú El Muchachito Alegre</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Estilos personalizados para mantener la esencia del PDF y mejorar la apariencia */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8fafc; /* Color de fondo claro */
+        }
+        .menu-title {
+            color: #1e3a8a; /* Azul oscuro para el título */
+        }
+        .section-title {
+            color: #4a5568; /* Gris más oscuro para los títulos de sección */
+            border-bottom: 2px solid #cbd5e0; /* Línea divisoria suave */
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        .dish-name {
+            color: #1a202c; /* Negro para el nombre del plato */
+            font-weight: 600; /* Resaltar el nombre */
+        }
+        .dish-description {
+            color: #718096; /* Gris claro para la descripción */
+            font-size: 0.875rem; /* Tamaño de fuente más pequeño */
+        }
+        .price {
+            color: #e63946; /* Rojo para el precio */
+            font-weight: 600; /* Resaltar el precio */
+        }
+        .menu-section {
+            margin-bottom: 2rem; /* Más espacio entre secciones */
+        }
+        /* Estilos para el menú en móvil */
+        @media (max-width: 768px) {
+            .menu-item {
+                margin-bottom: 1.5rem;
+                padding-bottom: 1.5rem;
+                border-bottom: 1px solid #e2e8f0;
+            }
+            .menu-item:last-child {
+                border-bottom: none;
+            }
+        }
+        /* Estilos para tablet y desktop */
+        @media (min-width: 768px) {
+            .grid-cols-md-2 {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+        @media (min-width: 1024px) {
+            .grid-cols-lg-3 {
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-100 p-4">
+    <div class="max-w-3xl mx-auto bg-white rounded-lg shadow-md p-6">
+        <header class="text-center mb-8">
+            <h1 class="menu-title text-3xl font-semibold">EL MUCHACHITO ALEGRE</h1>
+            <h2 class="text-xl text-gray-600">RESTAURANTE BORCELLE</h2>
+            <p class="text-gray-700">MENÚ FRESCO Y DELICIOSO</p>
+        </header>
+
+        <main>
+            <section class="menu-section">
+                <h2 class="section-title text-2xl font-semibold">ENTRANTES</h2>
+                <div class="grid grid-cols-1 grid-cols-md-2 gap-6">
+                    <div class="menu-item">
+                        <h3 class="dish-name text-lg">COCTEL DE CAMARÓN</h3>
+                        <p class="dish-description">Mediano</p>
+                        <p class="price text-md font-bold">$100</p>
+                        <p class="dish-description">Grande</p>
+                        <p class="price text-md font-bold">$185</p>
+                    </div>
+                    <div class="menu-item">
+                        <h3 class="dish-name text-lg">COCTEL DE PULPO, CALAMAR, OSTION O SURIMI</h3>
+                        <p class="dish-description">Mediano</p>
+                        <p class="price text-md font-bold">$85</p>
+                        <p class="dish-description">Grande</p>
+                        <p class="price text-md font-bold">$120</p>
+                    </div>
+                    <div class="menu-item">
+                        <h3 class="dish-name text-lg">TOSTADAS DE CAMARÓN, PULPO, SURIMI O CALAMAR</h3>
+                        <p class="price text-md font-bold">$85</p>
+                    </div>
+                    <div class="menu-item">
+                        <h3 class="dish-name text-lg">VUELVE A LA VIDA (MARINERO O NORMAL)</h3>
+                        <p class="dish-description">Chico</p>
+                        <p class="price text-md font-bold">$120</p>
+                        <p class="dish-description">Grande</p>
+                        <p class="price text-md font-bold">$200</p>
+                    </div>
+                    <div class="menu-item">
+                        <h3 class="dish-name text-lg">EMPANADAS DE CAMARON</h3>
+                        <p class="price text-md font-bold">$75</p>
+                    </div>
+                    <div class="menu-item">
+                        <h3 class="dish-name text-lg">QUESADILLAS (PESCADO, CAMARON, PULPO)</h3>
+                        <p class="price text-md font-bold">$25</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="menu-section">
+                <h2 class="section-title text-2xl font-semibold">PLATOS PRINCIPALES</h2>
+                <div class="grid grid-cols-1 grid-cols-md-2 gap-6">
+                    <div class="menu-item">
+                        <h3 class="dish-name text-lg">MOJARRAS (PRECIO SEGUN TAMAÑO)</h3>
+                        <p class="dish-description">Frita, mojo de ajo, enchipotlada, a la diabla (Con ensalada y arroz)</p>
+                    </div>
+                    <div class="menu-item">
+                        <h3 class="dish-name text-lg">CAMARONES (6 A 8 PIEZAS)</h3>
+                        <p class="dish-description">Mantequilla, mojo de ajo, enchipotlados, a la diabla (Con ensalada y arroz)</p>
+                        <p class="price text-md font-bold">$195</p>
+                    </div>
+                    <div class="menu-item">
+                        <h3 class="dish-name text-lg">ARRACHERA, PECHUGA EMPANIZADA O ASADA</h3>
+                        <p class="dish-description">Con ensalada y arroz</p>
+                        <p class="price text-md font-bold">$175</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="menu-section">
+                <h2 class="section-title text-2xl font-semibold">ESPECIALIDADES DE LA CASA</h2>
+                <div class="grid grid-cols-1 grid-cols-md-2 gap-6">
+                    <div class="menu-item">
+                        <h3 class="dish-name text-lg">SALMON A LA MANTEQUILLA</h3>
+                        <p class="dish-description">Todo acompañado con ensalada y arroz</p>
+                        <p class="price text-md font-bold">$295</p>
+                    </div>
+                    <div class="menu-item">
+                        <h3 class="dish-name text-lg">FILETE EMPANIZADO</h3>
+                        <p class="dish-description">Todo acompañado con ensalada y arroz</p>
+                        <p class="price text-md font-bold">$195</p>
+                    </div>
+                    <div class="menu-item">
+                        <h3 class="dish-name text-lg">CAMARONES MOMIA</h3>
+                        <p class="dish-description">Todo acompañado con ensalada y arroz</p>
+                        <p class="price text-md font-bold">$220</p>
+                    </div>
+                    <div class="menu-item">
+                         <h3 class="dish-name text-lg">CAMARONES EMPANIZADOS</h3>
+                         <p class="dish-description">Todo acompañado con ensalada y arroz</p>
+                        <p class="price text-md font-bold">$220</p>
+                    </div>
+                    <div class="menu-item">
+                        <h3 class="dish-name text-lg">CAMARONES HAWAIANOS</h3>
+                        <p class="dish-description">Todo acompañado con ensalada y arroz</p>
+                        <p class="price text-md font-bold">$220</p>
+                    </div>
+                    <div class="menu-item">
+                        <h3 class="dish-name text-lg">CONCHAS</h3>
+                        <p class="price text-md font-bold">$20 PZA</p>
+                    </div>
+                    <div class="menu-item">
+                        <h3 class="dish-name text-lg">Ostiones</h3>
+                    </div>
+                    <div class="menu-item">
+                         <h3 class="dish-name text-lg">Pata de mula</h3>
+                    </div>
+                </div>
+            </section>
+
+            <section class="menu-section">
+                <h2 class="section-title text-2xl font-semibold">SNACKS</h2>
+                <div class="grid grid-cols-1 grid-cols-md-2 gap-6">
+                    <div class="menu-item">
+                        <h3 class="dish-name text-lg">ALITAS</h3>
+                        <p class="dish-description">(BBQ, Búfalo, Mango habanero, lemon papper)</p>
+                        <p class="price text-md font-bold">$110</p>
+                    </div>
+                    <div class="menu-item">
+                        <h3 class="dish-name text-lg">NUGGETS DE POLLO</h3>
+                        <p class="price text-md font-bold">$65</p>
+                    </div>
+                    <div class="menu-item">
+                        <h3 class="dish-name text-lg">PAPAS A LA FRANCESA</h3>
+                        <p class="price text-md font-bold">$65</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="menu-section">
+                <h2 class="section-title text-2xl font-semibold">POSTRES</h2>
+                <div class="grid grid-cols-1 grid-cols-md-2 gap-6">
+                    <div class="menu-item">
+                        <h3 class="dish-name text-lg">FRESAS CON CREMA</h3>
+                        <p class="dish-description">Fresas selectas, jugosas y llenas de sabor, realzadas por la suavidad envolvente de la crema</p>
+                        <p class="price text-md font-bold">$55</p>
+                    </div>
+                    <div class="menu-item">
+                        <h3 class="dish-name text-lg">DURAZNOS CON CREMA</h3>
+                        <p class="dish-description">Rebanadas de duraznos en almíbar, acariciadas por una crema ligera y delicada</p>
+                        <p class="price text-md font-bold">$55</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="menu-section">
+                <h2 class="section-title text-2xl font-semibold">BEBIDAS</h2>
+                <div class="grid grid-cols-1 grid-cols-md-2 grid-cols-lg-3 gap-6">
+                    <div class="menu-item">
+                        <h3 class="dish-name text-lg">CON ALCOHOL</h3>
+                        <h4 class="dish-name text-md">CERVEZAS (335 ML)</h4>
+                        <p class="dish-description">Pacífico</p>
+                        <p class="price text-md font-bold">$35</p>
+                         <p class="dish-description">Corona</p>
+                        <p class="price text-md font-bold">$35</p>
+                         <p class="dish-description">Victoria</p>
+                        <p class="price text-md font-bold">$35</p>
+                    </div>
+                    <div class="menu-item">
+                        <h4 class="dish-name text-md">PREPARADAS</h4>
+                        <p class="dish-description">Michelada (Con tu cerveza preferida)</p>
+                        <p class="price text-md font-bold">$40</p>
+                        <p class="dish-description">Clamato preparado (Con camarones opcional)</p>
+                        <p class="price text-md font-bold">$60</p>
+                        <p class="dish-description">Piña colada</p>
+                        <p class="price text-md font-bold">$85</p>
+                        <p class="dish-description">Vaso escarchado</p>
+                        <p class="price text-md font-bold">$10</p>
+                        <p class="dish-description">Vaso con clamato</p>
+                        <p class="price text-md font-bold">$35</p>
+                    </div>
+                    <div class="menu-item">
+                        <h3 class="dish-name text-lg">SIN ALCOHOL</h3>
+                        <p class="dish-description">COCA-COLA, FANTA, MUNDET, FRESCA</p>
+                        <p class="price text-md font-bold">$25</p>
+                        <p class="dish-description">JARRA DE AGUA DE 2L (SABOR DEL DIA)</p>
+                        <p class="price text-md font-bold">$75</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
