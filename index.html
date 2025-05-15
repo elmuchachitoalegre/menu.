@@ -7,36 +7,34 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        /* Estilos personalizados para mantener la esencia del PDF y mejorar la apariencia */
         body {
             font-family: 'Poppins', sans-serif;
-            background-color: #f8fafc; /* Color de fondo claro */
+            background-color: #f8fafc;
         }
         .menu-title {
-            color: #1e3a8a; /* Azul oscuro para el título */
+            color: #1e3a8a;
         }
         .section-title {
-            color: #4a5568; /* Gris más oscuro para los títulos de sección */
-            border-bottom: 2px solid #cbd5e0; /* Línea divisoria suave */
+            color: #4a5568;
+            border-bottom: 2px solid #cbd5e0;
             padding-bottom: 0.5rem;
             margin-bottom: 1rem;
         }
         .dish-name {
-            color: #1a202c; /* Negro para el nombre del plato */
-            font-weight: 600; /* Resaltar el nombre */
+            color: #1a202c;
+            font-weight: 600;
         }
         .dish-description {
-            color: #718096; /* Gris claro para la descripción */
-            font-size: 0.875rem; /* Tamaño de fuente más pequeño */
+            color: #718096;
+            font-size: 0.875rem;
         }
         .price {
-            color: #e63946; /* Rojo para el precio */
-            font-weight: 600; /* Resaltar el precio */
+            color: #e63946;
+            font-weight: 600;
         }
         .menu-section {
-            margin-bottom: 2rem; /* Más espacio entre secciones */
+            margin-bottom: 2rem;
         }
-        /* Estilos para el menú en móvil */
         @media (max-width: 768px) {
             .menu-item {
                 margin-bottom: 1.5rem;
@@ -47,7 +45,6 @@
                 border-bottom: none;
             }
         }
-        /* Estilos para tablet y desktop */
         @media (min-width: 768px) {
             .grid-cols-md-2 {
                 grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -80,15 +77,21 @@
                         <p class="price text-md font-bold">$185</p>
                     </div>
                     <div class="menu-item">
-                        <h3 class="dish-name text-lg">COCTEL DE PULPO, CALAMAR, OSTION O SURIMI</h3>
+                        <h3 class="dish-name text-lg">COCTEL DE PULPO, CALAMAR, OSTIÓN O SURIMI</h3>
                         <p class="dish-description">Mediano</p>
                         <p class="price text-md font-bold">$85</p>
                         <p class="dish-description">Grande</p>
                         <p class="price text-md font-bold">$120</p>
                     </div>
                     <div class="menu-item">
-                        <h3 class="dish-name text-lg">TOSTADAS DE CAMARÓN, PULPO, SURIMI O CALAMAR</h3>
+                        <h3 class="dish-name text-lg">TOSTADAS</h3>
+                        <p class="dish-description">Camarón</p>
                         <p class="price text-md font-bold">$85</p>
+                    </div>
+                    <div class="menu-item">
+                         <h3 class="dish-name text-lg">TOSTADAS</h3>
+                         <p class="dish-description">Pulpo, Calamar y Surimi</p>
+                        <p class="price text-md font-bold">$75</p>
                     </div>
                     <div class="menu-item">
                         <h3 class="dish-name text-lg">VUELVE A LA VIDA (MARINERO O NORMAL)</h3>
@@ -98,8 +101,14 @@
                         <p class="price text-md font-bold">$200</p>
                     </div>
                     <div class="menu-item">
-                        <h3 class="dish-name text-lg">EMPANADAS DE CAMARÓN</h3>
+                        <h3 class="dish-name text-lg">EMPANADAS</h3>
+                         <p class="dish-description">Camarón</p>
                         <p class="price text-md font-bold">$75</p>
+                    </div>
+                    <div class="menu-item">
+                         <h3 class="dish-name text-lg">EMPANADAS</h3>
+                         <p class="dish-description">Pulpo, Calamar y Surimi</p>
+                        <p class="price text-md font-bold">$65</p>
                     </div>
                     <div class="menu-item">
                         <h3 class="dish-name text-lg">QUESADILLAS (PESCADO, CAMARÓN, PULPO)</h3>
@@ -112,8 +121,9 @@
                 <h2 class="section-title text-2xl font-semibold">PLATOS PRINCIPALES</h2>
                 <div class="grid grid-cols-1 grid-cols-md-2 gap-6">
                     <div class="menu-item">
-                        <h3 class="dish-name text-lg">MOJARRAS (PRECIO SEGÚN TAMAÑO)</h3>
+                        <h3 class="dish-name text-lg">MOJARRAS (600 - 800 GRS)</h3>
                         <p class="dish-description">Frita, mojo de ajo, enchipotlada, a la diabla (Con ensalada y arroz)</p>
+                        <p class="price text-md font-bold">$185</p>
                     </div>
                     <div class="menu-item">
                         <h3 class="dish-name text-lg">CAMARONES (6 A 8 PIEZAS)</h3>
@@ -129,7 +139,7 @@
             </section>
 
             <section class="menu-section">
-                <h2 class="section-title text-2xl font-semibold">ESPECIALIDADES DE LA CASA</h2>
+                <h2 class="section-title text-2xl font-semibold">ESPECIALIDADES DE LA CASA (VIERNES, SÁBADO Y DOMINGO)</h2>
                 <div class="grid grid-cols-1 grid-cols-md-2 gap-6">
                     <div class="menu-item">
                         <h3 class="dish-name text-lg">SALMÓN A LA MANTEQUILLA</h3>
@@ -170,6 +180,33 @@
             </section>
 
             <section class="menu-section">
+                <h2 class="section-title text-2xl font-semibold">CALDOS Y SOPAS</h2>
+                <div class="grid grid-cols-1 grid-cols-md-2 gap-6">
+                    <div class="menu-item">
+                        <h3 class="dish-name text-lg">CALDO DE CAMARÓN</h3>
+                        <p class="price text-md font-bold">$150</p>
+                    </div>
+                    <div class="menu-item">
+                        <h3 class="dish-name text-lg">CALDO DE JAIBa</h3>
+                        <p class="price text-md font-bold">$140</p>
+                    </div>
+                    <div class="menu-item">
+                        <h3 class="dish-name text-lg">CALDO DE PESCADO</h3>
+                        <p class="price text-md font-bold">$130</p>
+                    </div>
+                    <div class="menu-item">
+                        <h3 class="dish-name text-lg">SOPA DE MARISCOS</h3>
+                        <p class="price text-md font-bold">$250</p>
+                    </div>
+                    <div class="menu-item">
+                        <h3 class="dish-name text-lg">CAZUELA DE MARISCOS</h3>
+                         <p class="dish-description">(Camarón, pulpo, calamar, surimi, almejas, mejillones, jaiba y pescado)</p>
+                        <p class="price text-md font-bold">$300</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="menu-section">
                 <h2 class="section-title text-2xl font-semibold">SNACKS</h2>
                 <div class="grid grid-cols-1 grid-cols-md-2 gap-6">
                     <div class="menu-item">
@@ -184,6 +221,27 @@
                     <div class="menu-item">
                         <h3 class="dish-name text-lg">PAPAS A LA FRANCESA</h3>
                         <p class="price text-md font-bold">$65</p>
+                    </div>
+                    <div class="menu-item">
+                        <h3 class="dish-name text-lg">NACHOS CON CARNE</h3>
+                        <p class="price text-md font-bold">$90</p>
+                    </div>
+                    <div class="menu-item">
+                        <h3 class="dish-name text-lg">PALOMITAS DE MICROONDAS</h3>
+                        <p class="price text-md font-bold">$40</p>
+                    </div>
+                    <div class="menu-item">
+                        <h3 class="dish-name text-lg">SOPA MARUCHAN</h3>
+                        <p class="dish-description">Con camarón opcional</p>
+                        <p class="price text-md font-bold">$50</p>
+                    </div>
+                     <div class="menu-item">
+                        <h3 class="dish-name text-lg">HAMBURGUESA DE POLLO</h3>
+                        <p class="price text-md font-bold">$100</p>
+                    </div>
+                    <div class="menu-item">
+                        <h3 class="dish-name text-lg">HAMBURGUESA DE RES</h3>
+                        <p class="price text-md font-bold">$120</p>
                     </div>
                 </div>
             </section>
